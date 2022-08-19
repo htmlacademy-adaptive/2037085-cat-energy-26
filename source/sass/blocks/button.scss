@@ -1,0 +1,44 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 25px;
+
+  font-family: inherit;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: none;
+  cursor: pointer;
+}
+
+.button--green {
+  color: $color_light;
+
+  background-color: $color_green;
+
+  &:hover,
+  &:focus {
+    background-color: $color_dark-green;
+  }
+
+  &:active {
+    color: rgba($color_light, 0.3);
+  }
+}
+
+.button--gray {
+  color: $color_dark-gray;
+
+  background-color: $color_gray;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba($color_dark-gray, 0.3);
+  }
+}

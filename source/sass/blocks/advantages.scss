@@ -1,0 +1,87 @@
+.advantages {
+  margin-bottom: 43px;
+}
+
+.block__title {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-weight: inherit;
+  font-size: 36px;
+  line-height: 60px;
+  font-family: inherit;
+  color: $color_dark-gray-title;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+
+  display: flex;
+  flex-shrink: 1;
+  align-items: center;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: $color_dark-gray;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+  .advantages__item--benefit {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+
+    background-color: $color_green;
+    background-image: url("../img/svg/benefit-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .advantages__item--powder {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+
+    background-color: $color_green;
+    background-image: url("../img/svg/powder-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .advantages__item--calorie {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+
+    background-color: $color_green;
+    background-image: url("../img/svg/calorie-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .advantages__item--performance {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+
+    background-color: $color_green;
+    background-image: url("../img/svg/performance-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }

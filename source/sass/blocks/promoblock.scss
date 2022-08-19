@@ -1,0 +1,56 @@
+.promoblock {
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.index-background {
+  z-index: 10;
+
+  padding: 28px 20px 152px;
+
+  text-align: center;
+
+  background-color: #65a93c;
+  background-image:
+
+  url("../img/index-background-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.promoblock__text {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  font-weight: inherit;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: inherit;
+  color: $color_light;
+}
+
+.promoblock__description {
+  font-weight: inherit;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: inherit;
+  color: $color_light;
+  text-transform: uppercase;
+}
+
+.promoblock__image {
+  display: block;
+  width: 280px;
+  height: 270px;
+  margin: -138px auto 2px;
+}
+
+.promoblock__button {
+  z-index: 10;
+
+  display: block;
+  width: auto;
+  margin: 0 20px;
+  padding: 11px 20px;
+}
