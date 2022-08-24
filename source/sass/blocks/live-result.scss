@@ -1,8 +1,4 @@
-.example__statistics {
-  margin-bottom: 34px;
-}
-
-.example__wrapper {
+.live__result {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -11,15 +7,22 @@
   margin-bottom: 34px;
 }
 
-.example__progress {
+.live__result-item {
   position: relative;
+  z-index: 1;
 
   width: 124px;
   margin: 0;
   margin-right: 30px;
   padding: 13px 18px 15px;
 
+  font-weight: inherit;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: inherit;
   text-align: center;
+  color: $color_dark-gray-title;
+  text-transform: uppercase;
 
   border: 1px solid #cdcdcd;
   border-radius: 3px;
@@ -29,20 +32,7 @@
   }
 }
 
-.example__progress-result {
-  z-index: 1;
-
-  margin: 0;
-
-  font-weight: inherit;
-  font-size: 24px;
-  line-height: 24px;
-  font-family: inherit;
-  color: $color_dark-gray-title;
-  text-transform: uppercase;
-}
-
-.example__progress-text {
+.live__result-description {
   position: absolute;
   right: 0;
   bottom: 8px;
@@ -62,7 +52,7 @@
   transform: translateY(100%);
 }
 
-.example__price-text {
+.live__result-price{
   margin: 0;
 
   font-weight: inherit;

@@ -1,11 +1,11 @@
-.example__slider {
+.live__slider {
   position: relative;
 
   width: 280px;
   height: 256px;
 }
 
-.slider__slide-image {
+.live__slider-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,7 +24,9 @@
     }
 }
 
-.slider__toggles {
+/*<svg width="40" height="258" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="18" width="4" height="257.02" rx="2" fill="#666" /><rect x="1" y="110" width="38" height="38" rx="19" fill="#fff" /><path d="m16 120-8 9 8 9v-18ZM32 129l-8-9v18l8-9Z" fill="#666" /><rect x="1" y="110" width="38" height="38" rx="19" stroke="#666" stroke-width="2" /></svg>  СВГ ползунка. Вставлять в разметку? И прошлая разметка не подходит ведь?*/
+
+.live__slider-range {
   content: "";
   position: absolute;
   left: 50%;
@@ -38,12 +40,12 @@
   &:hover {
     background-color: $color_green;
 
-    .slider__toggles::before,
-    .slider__toggles::after {
+    .live__slider-range::before,
+    .live__slider-range::after {
       background-color: $color_green;
     }
 
-    .slider__toggles {
+    .live__slider-range {
       border-color: $color_green;
     }
   }
@@ -53,7 +55,7 @@
   }
 }
 
-.slider__control {
+.live__slider-control {
   content: "";
   position: absolute;
   top: calc(50% - 22px);
