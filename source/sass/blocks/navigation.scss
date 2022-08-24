@@ -25,6 +25,29 @@
   cursor: pointer;
 }
 
+.navigation__logo {
+  display: block;
+  align-items: center;
+  width: 191px;
+  height: 38px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: 20px;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
+
 .navigation__list {
   position: absolute;
   top: 65px;
