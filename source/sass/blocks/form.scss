@@ -1,0 +1,261 @@
+.form__container {
+  padding-top: 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-top: 14px;
+
+    background-color: $color_green;
+  }
+
+  &--comment {
+    padding-top: 14px;
+  }
+
+  &--add {
+    padding-top: 29px;
+  }
+}
+
+.form__group {
+  width: calc(100% + 40px);
+  margin: 0;
+  margin-left: -20px;
+  padding: 20px 20px 9px;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.form__group-item {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.form__svg {
+  position: absolute;
+
+  &--email {
+    top: 14px;
+    right: 16px;
+
+    width: 17px;
+    height: 17px;
+  }
+
+  &--phone {
+    top: 13px;
+    right: 13px;
+
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.form__prompt {
+  display: block;
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-weight: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: $color_dark-gray;
+}
+
+.form__submit {
+  margin: 0 auto 21px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 27px;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: $color_green;
+}
+
+.form__label {
+  margin: 0;
+  margin-right: 14px;
+  margin-bottom: 2px;
+  margin-left: -1px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: inherit;
+  color: $color_dark-gray-label;
+  text-transform: uppercase;
+
+  &--email {
+    margin-right: 12px;
+  }
+
+  &--phone {
+    margin-right: 10px;
+  }
+}
+
+.form__label-control {
+  display: block;
+  margin-bottom: 12px;
+  margin-left: 1px;
+
+  &::before {
+    content: "";
+
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: -2px;
+    margin-right: 16px;
+    margin-bottom: 2px;
+    margin-left: -1px;
+
+    vertical-align: middle;
+
+    border: 9px solid $color_light;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(#cdcdcd, 1);
+
+    transition: 0.3s ease;
+  }
+
+  .form__label-control:checked+&::before {
+    background-color: $color_green;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    box-shadow: 0 0 2px rgba(#bababa, 1);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form__input-item--check {
+  display: block;
+  margin-top: 2px;
+  margin-bottom: 12px;
+  padding-left: 2px;
+
+  &::before {
+    content: "";
+
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+
+    vertical-align: middle;
+
+    border: 1px solid #d9d9d9;
+
+    transition: 0.3s ease;
+  }
+
+  .form__input-item--check:checked+&::before {
+    background-image: url("../img/svg/check-mark-form.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21px 16px;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form__input-item {
+  flex-grow: 1;
+  width: 100%;
+  padding: 12px 15px 13px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: inherit;
+  color: $color_dark-gray;
+  text-transform: uppercase;
+
+  border: 1px solid #d9d9d9;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:active,
+  &:focus {
+    outline: 2px solid $color_dark-gray;
+  }
+
+  &:active~.form__icon,
+  &:focus~.form__icon {
+    color: $color_green;
+  }
+
+  &--invalid {
+    border-color: transparent;
+    outline: 2px solid #ff8282;
+  }
+
+  &--invalid~.form__icon {
+    color: #ff8282;
+  }
+
+  &--email {
+    padding-right: 50px;
+    padding-left: 14px;
+  }
+
+  &--phone {
+    padding-right: 60px;
+  }
+
+  &--commit {
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding-right: 10px;
+    padding-left: 14px;
+  }
+}
+
+.title-page-other {
+  display: inline-block;
+  width: min-content;
+  margin: 0;
+  margin-bottom: 34px;
+  margin-left: -21px;
+  padding-right: 22px;
+  padding-left: 20px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: inherit;
+  color: $color_dark-gray-title;
+
+  background-color: $color_light;
+}
