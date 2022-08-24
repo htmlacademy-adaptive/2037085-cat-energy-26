@@ -1,20 +1,27 @@
-.advantages {
+.advantage {
   margin-bottom: 43px;
+
+  counter-reset: section;
 }
 
-.advantages__list {
-  margin: 0;
-  padding: 0;
+.advantage__list {
+  display: grid;
+  align-items: center;
 
-  list-style: none;
+  column-gap: 20px;
+
+  counter-reset: subsection;
+
+  grid-template-columns: repeat(2, auto);
 }
 
-.advantages__item {
+.advantage__title{
+  line-height: 40px;
+}
+
+.advantage__item {
   position: relative;
 
-  display: flex;
-  flex-shrink: 1;
-  align-items: center;
   margin-bottom: 20px;
 
   font-size: 14px;
@@ -22,12 +29,18 @@
   font-family: "Arial", sans-serif;
   color: $color_dark-gray;
 
+  grid-column: 1/2;
+
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-  .advantages__item--benefit {
+  .advantage__item--beneficial {
+    /*
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+    */
     display: inline-block;
     width: 60px;
     height: 60px;
@@ -37,9 +50,11 @@
     background-image: url("../img/svg/benefit-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    grid-column: 2/3;
   }
 
-  .advantages__item--powder {
+  .advantage__item--powder {
     display: inline-block;
     width: 60px;
     height: 60px;
@@ -49,28 +64,34 @@
     background-image: url("../img/svg/powder-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    grid-column: 2/3;
   }
 
-  .advantages__item--calorie {
+  .advantage__item--eating {
     display: inline-block;
     width: 60px;
     height: 60px;
     margin-right: 20px;
 
     background-color: $color_green;
-    background-image: url("../img/svg/calorie-mobile.svg");
+    background-image: url("../img/svg/eating-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    grid-column: 2/3;
   }
 
-  .advantages__item--performance {
+  .advantage__item--changes {
     display: inline-block;
     width: 60px;
     height: 60px;
     margin-right: 20px;
 
     background-color: $color_green;
-    background-image: url("../img/svg/performance-mobile.svg");
+    background-image: url("../img/svg/changes-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    grid-column: 2/3;
   }
