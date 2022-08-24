@@ -13,17 +13,17 @@
 
 @import "./blocks/header.scss";
 
-@import "./blocks/main-nav.scss";
+@import "./blocks/navigation.scss";
 
 @import "./blocks/contact.scss";
-
-@import "./blocks/site-list.scss";
 
 @import "./blocks/promoblock.scss";
 
 @import "./blocks/program.scss";
 
 @import "./blocks/advantages.scss";
+
+@import "./blocks/block.scss";
 
 @import "./blocks/example.scss";
 
@@ -37,9 +37,9 @@
 
 @import "./blocks/title-page.scss";
 
-@import "./blocks/catalog-list.scss";
+@import "./blocks/catalog.scss";
 
-@import "./blocks/catalog-other.scss";
+@import "./blocks/product.scss";
 
 @import "./blocks/description-page.scss";
 

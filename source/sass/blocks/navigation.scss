@@ -1,8 +1,53 @@
-.site-list {
-  z-index: 10;
+.navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
-.site-list__item {
+.navigation__btn {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  z-index: 10;
+
+  display: inline-block;
+  width: 24px;
+  height: 18px;
+
+  vertical-align: middle;
+
+  background-color: transparent;
+  background-image: url("../img/svg/bth-on-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+
+.navigation__list {
+  position: absolute;
+  top: 65px;
+  z-index: 10;
+
+  display: none;
+  width: 100%;
+
+  background-color: #ffffff;
+}
+
+.navigation--no-js .navigation__list {
+  position: static;
+
+  display: block;
+}
+
+/*
+.navigation .navigation__btn {
+  display: none;
+}*/
+
+.navigation__item {
   width: calc(100% + 40px);
   margin: 0;
   margin-left: -20px;
@@ -17,7 +62,7 @@
   }
 }
 
-.site-list__link {
+.navigation__link{
   position: relative;
 
   display: inline-block;
