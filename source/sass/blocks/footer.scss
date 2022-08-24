@@ -4,19 +4,22 @@
   background-color: $color_gray;
 }
 
+/*В эталонной разметке буквенный логотип почему-то в png - Это верно? Там же свг вроде со сменой состояний. Оставила свг пока и класс для него*/
 .footer__logo {
-  margin-bottom: 31px;
+  margin: 39px 96px 32px 96px;
+
+  cursor: pointer;
 }
 
-.social {
+.footer__social{
   margin-bottom: 13px;
   padding-right: 11px;
 }
 
-.social-container {
+.footer__social-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 21px 0 19px;
@@ -25,17 +28,15 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
-.social__item {
+.footer__social-item {
   margin-right: 39px;
-
-  list-style: none;
 
   &:last-child {
     margin: 0;
   }
 }
 
-.social__link {
+.footer__social-link {
   display: inline-block;
 
   vertical-align: middle;
@@ -50,4 +51,14 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.footer__logo-html{
+  display: flex;
+  justify-content: space-between;
+
+  color: $color_dark-gray;
+  text-decoration: none;
+
+  cursor: pointer;
 }
