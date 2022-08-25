@@ -80,6 +80,7 @@
 }
 
 /*Не могу установить боковые паддинги кнопки из макета - пропадают картинки*/
+/*Модификатор для серой кнопки нельзя в разметку добавить?*/
 .catalog__btn {
   padding: 10px;
 
@@ -87,4 +88,34 @@
   line-height: 20px;
 
   background-color: color_green;
+}
+
+.catalog__item-more {
+  position: relative;
+
+  width: calc(100% + 40px);
+  margin-bottom: 29px;
+  margin-left: -20px;
+  padding: 79px 20px 24px;
+
+  text-align: center;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 0;
+    left: 0;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+
+    background-image: url("../img/svg/catalog-item-more-before-mobile.svg");
+    opacity: 0.2;
+  }
 }
