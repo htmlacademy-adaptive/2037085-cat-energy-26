@@ -1,42 +1,23 @@
-.nutrition {
-  margin: 0;
-  margin-bottom: 22px;
-}
 
-.nutrition-background::before { /*В эталонной разметке нет. Убирать?*/
-  content: "";
-  position: absolute;
-  z-index: -1;
-
-  width: 320px;
-  height: 302px;
-
-  background-image:
-    linear-gradient(rgba($color_green, 0.85), rgba($color_green, 0.85)),
-    url("../img/index-background-mobile.png");
-  background-repeat: no-repeat;
-}
-
-.nutrition-background { /*В эталонной разметке нет. Убирать?*/
-  z-index: 2;
-
-  padding: 28px 20px 152px;
+.nutrition__title {
+  padding-top: 27px;
+  padding-bottom: 150px;
 
   text-align: center;
 
-  background-color: #65a93c;
-  background-image:
-
-    url("../img/index-background-mobile.png");
-  background-repeat: no-repeat;
-  background-position: center 0;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)),
+    url("../img/index-background-mobile.jpg");
+  background-repeat: repeat, no-repeat;
+  background-position: top;
+  background-size: auto, cover;
 }
 
-.nutrition__title{
-  padding-top: 27px;
+.nutrition__title h1 {
+  color: inherit;
 }
 
-.nutrition__subtitle{ /*В эталонной разметке нет. Убирать? У <p> нигде нет классов в эталоне. Эти параметры текста на боди нужно повесить?*/
+.nutrition__subtitle { /*Возможно, убрать*/
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

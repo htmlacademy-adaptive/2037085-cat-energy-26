@@ -9,7 +9,7 @@
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" href="../img/favicon/favicon.png">
+  <link rel="icon" type="image/png" href="img/favicon/favicon.png">
   <title>HTML Academy: Кэт энерджи</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
@@ -43,11 +43,9 @@
 
       <section class="nutrition">
         <div class="nutrition__title">
-          <div class="nutrition-background">
-            <h1 class="title-page">Функциональное питание&nbsp;для&nbsp;котов</h1>
-            <p class="nutrition__subtitle">Занялся собой? Займись котом!</p>
-            <a class="button nutrition__btn" href="form.html">Подобрать программу</a>
-          </div>
+          <h1 class="title-page">Функциональное питание&nbsp;для&nbsp;котов</h1>
+          <p class="nutrition__subtitle">Занялся собой? Займись котом!</p>
+          <a class="button nutrition__btn" href="form.html">Подобрать программу</a>
           <div class="nutrition__promo">
             <img src="img/index-can-mobile.jpg" width="280" height="270" alt="Банка с порцией питания Cat Energy PRO с курицей.">
           </div>
@@ -110,25 +108,27 @@
 
         <div class="live__slider">
           <div class="live__slider-container">
-            <div class="live__slider-item">
+            <div class="live__slider-item live__slider--before">
               <img src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile.png" alt="Кот, страдающий ожирением." width="280" height="232">
             </div>
-            <div class="live__slider-item">
+            <div class="live__slider-item live__slider--after">
               <img src="img/cat-skinny-mobile.png" srcset="img/cat-skinny-mobile.png" alt="Похудевший кот." width="243" height="232">
             </div>
           </div>
           <div class="live__change">
-            <button class="live__change-btn live__change-btn--was" type="button">Было</button>
-            <div class="live__change-range">
-              <label class="live__change-label">
-                <input class="live__change-input visually-hidden" type="range" min="0" max="100" step="1" value="0">
-                <span class="visually-hidden">Соотношение вариантов.</span>
-              </label>
-              <button class="live__change-pin">
+            <div class="live__change-label">
+              <label class="visually-hidden" for="slider-range">Соотношение вариантов</label>
+              <input class="live__change-input visually-hidden" id="slider-range" type="range" min="0" max="100" step="1" value="0">
+              <button class="live__change-pin" type="button">
+                <svg width="40" height="258" role="img" fill="currentColor" viewbox="0 0 128 24" xmlns="http://www.w3.org/2000/svg" aria-label="Контакт" aria-hidden="true">
+                  <rect x="18" width="4" height="256" rx="2" fill="#666" />
+                  <rect x="1" y="109" width="38" height="38" rx="19" fill="#fff" />
+                  <path d="m16 119-8 9 8 9v-18ZM32 128l-8-9v18l8-9Z" fill="#666" />
+                  <rect x="1" y="109" width="38" height="38" rx="19" stroke="#666" stroke-width="2" />
+                </svg>
                 <span class="visually-hidden">Регулировка.</span>
               </button>
             </div>
-            <button class="live__change-btn live__change-btn--became" type="button">Стало</button>
           </div>
         </div>
       </div>

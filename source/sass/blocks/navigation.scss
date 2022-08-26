@@ -1,8 +1,8 @@
 .navigation {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: relative;
+
+  min-height: 65px;
+  padding-top: 10px;
 }
 
 .navigation__btn {
@@ -34,6 +34,7 @@
   margin-right: auto;
   margin-bottom: 0;
   margin-left: 20px;
+
   cursor: pointer;
 
   transition: 0.3s ease;
@@ -85,7 +86,7 @@
   }
 }
 
-.navigation__link{
+.navigation__link {
   position: relative;
 
   display: inline-block;
