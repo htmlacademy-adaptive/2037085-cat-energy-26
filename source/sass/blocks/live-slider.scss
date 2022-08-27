@@ -11,18 +11,18 @@
   height: 100%;
 }
 
-.live__slider-item img {
+.live__slider-item {
   width: 50%;
   height: 100%;
 
   object-fit: cover;
 }
 
-.live__slider--before img {
+.live__slider--before {
   object-position: right;
 }
 
-.live__slider--after img {
+.live__slider--after {
   object-position: left;
 }
 
@@ -35,14 +35,14 @@
   width: 4px;
   height: 100%;
 
-  background-color: $special-dark-grey-4;
+  background-color: $slider-dark-grey;
 
   &:hover {
-    background-color: $basic-green;
+    background-color: $color_green;
 
     .live__change-pin::before,
     .live__change-pin::after {
-      background-color: $basic-green;
+      background-color: $color_green;
     }
   }
 

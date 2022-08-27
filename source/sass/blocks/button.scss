@@ -1,34 +1,35 @@
 .button {
-  display: inline-block;
-  width: 100%;
-  padding: 15px 25px;
+  display: block;
+  width: 168px;
+  margin: 0 auto;
+  padding: 10px;
 
-  font-family: inherit;
-  vertical-align: middle;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
 
+  background-color: #68b738;
   border: none;
   cursor: pointer;
-}
-
-.button--green {
-  color: $color_light;
-
-  background-color: $color_green;
 
   &:hover,
   &:focus {
-    background-color: $color_dark-green;
+    background-color: #5eaa2f;
   }
 
   &:active {
-    color: rgba($color_light, 0.3);
-  }
+    color: rgba($color: #ffffff, $alpha: 0.3);
+
+    background-color: #5eaa2f;
+    }
 }
 
-.button--gray {
+/*Модификатор для серых кнопок*/
+.button--other {
   color: $color_dark-gray;
 
   background-color: $color_gray;

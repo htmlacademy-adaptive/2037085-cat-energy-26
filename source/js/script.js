@@ -4,13 +4,16 @@ if (document.querySelector('.no-js')) {
 }
 
 // Скрипт для меню
-const menuBtn = document.querySelector('.main-nav__toggle');
-const menuNav = document.querySelector('.main-nav');
+const menuBtn = document.querySelector('.navigation__btn');
+const menuNav = document.querySelector('.navigation');
 
 
 if (menuBtn) {
   menuBtn.addEventListener('click', function (evt) {
     evt.preventDefault;
-    menuNav.classList.toggle('main-nav--opened');
+    menuNav.classList.toggle('navigation--opened');
   });
 }
+
+
+

@@ -4,12 +4,26 @@
   background-color: $color_gray;
 }
 
-/*В эталонной разметке буквенный логотип почему-то в png - Это верно? Там же свг вроде со сменой состояний. Оставила свг пока и класс для него*/
 .footer__logo {
+  display: block;
+  align-items: center;
+  width: 128px;
+  height: 24px;
   margin: 39px 96px 32px 96px;
 
   cursor: pointer;
-}
+
+  transition: 0.3s ease;
+
+    &[href]:hover,
+    &[href]:focus {
+      opacity: 0.8;
+    }
+
+    &[href]:active {
+      opacity: 0.6;
+    }
+  }
 
 .footer__social {
   margin-bottom: 13px;

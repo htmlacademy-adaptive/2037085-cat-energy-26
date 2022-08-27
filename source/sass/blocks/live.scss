@@ -5,23 +5,14 @@
 }
 
 .live__description {
-  margin: 0;
-  margin-bottom: 25px;
-  padding-right: 10px;
-
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Arial", sans-serif;
-  color: $color_dark-gray;
+  padding-bottom: 19px;
 }
 
 .live__title {
-  margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 40px;
+}
 
-  font-weight: inherit;
-  font-size: 36px;
-  line-height: 60px;
-  font-family: inherit;
-  color: $color_dark-gray-title;
+.live p {
+  font-family: $font-family-other;
+  color: #444444;
 }
