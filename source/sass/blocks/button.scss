@@ -1,0 +1,45 @@
+.button {
+  display: block;
+  width: 168px;
+  margin: 0 auto;
+  padding: 10px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-family-main;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #68b738;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+
+    background-color: #5eaa2f;
+  }
+}
+
+/*Модификатор для серых кнопок*/
+.button--other {
+  color: $color_dark-gray;
+
+  background-color: $color_gray;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba($color_dark-gray, 0.3);
+  }
+}

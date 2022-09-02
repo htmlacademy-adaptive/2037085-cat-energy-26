@@ -1,0 +1,32 @@
+
+
+.contact__map-image {
+  display: none;
+  width: 100%;
+  height: 362px;
+}
+
+.contact__map-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.contact__iframe {
+  height: 362px;
+}
+
+.contact__iframe iframe {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+}
+
+.no-js .contact__map-image {
+  display: block;
+}
+
+.no-js .contact__iframe {
+  display: none;
+}

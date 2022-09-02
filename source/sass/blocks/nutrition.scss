@@ -1,0 +1,55 @@
+.nutrition {
+  position: relative;
+
+  padding-bottom: 43px;
+
+  color: #ffffff;
+}
+
+.nutrition__title {
+  padding-top: 27px;
+  padding-bottom: 150px;
+
+  text-align: center;
+
+  background-image: linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+    url("../img/index-background-mobile.jpg");
+  background-repeat: repeat, no-repeat;
+  background-position: top;
+  background-size: auto, cover;
+}
+
+.nutrition__title h1 {
+  color: inherit;
+}
+
+.nutrition__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.nutrition__promo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.nutrition__btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 280px;
+  padding-bottom: 12px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  transform: translateX(-50%);
+}
