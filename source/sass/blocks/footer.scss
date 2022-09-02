@@ -74,14 +74,14 @@
   display: flex;
   justify-content: space-between;
 
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Arial";
   color: $color_dark-gray;
+  color: #444444;
   text-decoration: none;
 
   cursor: pointer;
-  font-family: 'Arial';
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
 }
 
 .footer__title{
@@ -96,10 +96,18 @@
   color: #444444;
 }
 
-.footer__map--no-js iframe {
+.footer__map-iframe {
+  display: block;
+}
+
+.footer__map-img {
   display: none;
 }
 
-.footer__map--js img {
+.no-js .footer__map-iframe {
   display: none;
+}
+
+.no-js .footer__map-img {
+  display: block;
 }

@@ -58,17 +58,25 @@
 }
 
  .advantage__item--beneficial::before {
+   background-color: $color_green;
    background-image: url("../img/svg/benefit-mobile.svg");
+   background-size: 60px 60px;
  }
 
  .advantage__item--powder::before {
+  background-color: $color_green;
    background-image: url("../img/svg/powder-mobile.svg");
+  background-size: 60px 60px;
  }
 
  .advantage__item--eating::before {
+  background-color: $color_green;
    background-image: url("../img/svg/eating-mobile.svg");
+  background-size: 60px 60px;
  }
 
  .advantage__item--changes::before {
+  background-color: $color_green;
    background-image: url("../img/svg/changes-mobile.svg");
+  background-size: 60px 60px;
  }
