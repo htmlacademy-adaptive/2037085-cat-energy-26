@@ -24,7 +24,6 @@
 }
 
 .header--index::after {
-
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
@@ -34,8 +33,10 @@
     left: 50%;
     z-index: -1;
 
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85),
-        rgba(104, 183, 56, 0.85)),
+    background-image: linear-gradient(
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
       url("../img/index-background-mobile.jpg");
     background-repeat: no-repeat;
     background-position: left;

@@ -1,4 +1,4 @@
-.nutrition{
+.nutrition {
   position: relative;
 
   padding-bottom: 43px;
@@ -12,8 +12,10 @@
 
   text-align: center;
 
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85),
-    rgba(104, 183, 56, 0.85)),
+  background-image: linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
     url("../img/index-background-mobile.jpg");
   background-repeat: repeat, no-repeat;
   background-position: top;
