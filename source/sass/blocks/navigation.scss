@@ -3,6 +3,28 @@
 
   min-height: 65px;
   padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    z-index: 2;
+
+    align-items: flex-end;
+    min-width: 440px;
+    height: auto;
+    padding: 24px 30px 0 30px;
+
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 2;
+
+    align-items: flex-end;
+    min-width: 483px;
+    height: auto;
+    padding: 53px 110px 0 110px;
+
+    background-color: transparent;
+  }
 }
 
 .navigation__btn {
@@ -44,6 +66,16 @@
 
   &[href]:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 60px;
   }
 }
 
