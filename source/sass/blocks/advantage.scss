@@ -4,9 +4,13 @@
 }
 
 .advantage__list {
+  display: grid;
   padding-top: 40px;
 
-  @media (min-width: 768px) {
+  grid-column: 2;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
     display: grid;
     padding-top: 65px;
 
@@ -15,10 +19,30 @@
     gap: 80px 60px;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 110px;
+
+    counter-reset: subsection;
+  }
 }
 
 .advantage__title {
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantage__item {
@@ -31,14 +55,14 @@
   font-family: $font-family-other;
   color: $color_dark-gray;
 
-  grid-column: 1/2;
+  grid-column: 2/3;
 
   &:last-child {
     margin-bottom: 0;
   }
 
   &::after {
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       content: counter(subsection);
       position: absolute;
       top: 0;
@@ -68,34 +92,54 @@
     background-color: #68b738;
     background-repeat: no-repeat;
     background-position: center;
+  }
 
-    @media (min-width: 768px) {
-      width: 80px;
-      height: 80px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 95px;
   }
 }
 
 .advantage__item--beneficial::before {
+  margin-right: 20px;
+
   background-color: $color_green;
   background-image: url("../img/svg/benefit-mobile.svg");
   background-size: 60px 60px;
+
+  grid-column: 1/2;
 }
 
 .advantage__item--powder::before {
+  margin-right: 20px;
+
   background-color: $color_green;
   background-image: url("../img/svg/powder-mobile.svg");
   background-size: 60px 60px;
+
+  grid-column: 1/2;
 }
 
 .advantage__item--eating::before {
+  margin-right: 20px;
+
   background-color: $color_green;
   background-image: url("../img/svg/eating-mobile.svg");
   background-size: 60px 60px;
+
+  grid-column: 1/2;
 }
 
 .advantage__item--changes::before {
+  margin-right: 20px;
+
   background-color: $color_green;
   background-image: url("../img/svg/changes-mobile.svg");
   background-size: 60px 60px;
+
+  grid-column: 1/2;
 }
