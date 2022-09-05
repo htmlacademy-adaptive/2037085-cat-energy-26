@@ -41,6 +41,12 @@
   text-decoration: none;
 }
 
+.catalog__table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
 .catalog__table-item {
   font-style: normal;
   font-weight: 400;
