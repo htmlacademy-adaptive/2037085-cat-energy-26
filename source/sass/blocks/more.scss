@@ -1,0 +1,28 @@
+.more {
+  padding: 26px 20px 35px;
+}
+
+.more__title {
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.more__weight {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $font-family-other;
+  color: #444444;
+}
+
+.more__price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $font-family-other;
+  color: #444444;
+}

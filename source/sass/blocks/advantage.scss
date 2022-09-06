@@ -4,16 +4,19 @@
 }
 
 .advantage__list {
+  display: grid;
   padding-top: 40px;
 
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+
   @media (min-width: 768px) {
-    display: grid;
     padding-top: 65px;
 
     counter-reset: subsection;
 
-    gap: 80px 60px;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -24,6 +27,7 @@
 .advantage__item {
   position: relative;
 
+  min-height: 60px;
   margin-bottom: 20px;
 
   font-size: 14px;
@@ -31,26 +35,47 @@
   font-family: $font-family-other;
   color: $color_dark-gray;
 
-  grid-column: 1/2;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 115px 75px 50px 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  &::after {
-    @media (min-width: 768px) {
+  &::before {
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $color_green;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
       content: counter(subsection);
       position: absolute;
       top: 0;
-      left: 110px;
-      z-index: -1;
+      left: 0;
 
+      width: 80px;
+      height: 80px;
       margin: 0;
 
       font-size: 280px;
       line-height: 230px;
       font-family: $font-family-main;
-      color: #f2f2f2;
+      color: $color_gray;
 
       counter-increment: subsection;
     }
@@ -58,25 +83,17 @@
 }
 
 .advantage__item--beneficial::before {
-  background-color: $color_green;
   background-image: url("../img/svg/benefit-mobile.svg");
-  background-size: 60px 60px;
 }
 
 .advantage__item--powder::before {
-  background-color: $color_green;
   background-image: url("../img/svg/powder-mobile.svg");
-  background-size: 60px 60px;
 }
 
 .advantage__item--eating::before {
-  background-color: $color_green;
   background-image: url("../img/svg/eating-mobile.svg");
-  background-size: 60px 60px;
 }
 
 .advantage__item--changes::before {
-  background-color: $color_green;
   background-image: url("../img/svg/changes-mobile.svg");
-  background-size: 60px 60px;
 }
