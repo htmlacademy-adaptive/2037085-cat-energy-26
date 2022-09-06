@@ -1,4 +1,5 @@
 .program {
+  margin-top: 20px;
   margin-bottom: 17px;
 }
 
@@ -18,7 +19,7 @@
   position: relative;
 
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   margin-left: 71px;
 
   font-weight: 400;
@@ -28,6 +29,8 @@
 }
 
 .program__descr {
+  padding-bottom: 28px;
+
   font-family: $font-family-other;
   color: #444444;
 }
@@ -35,7 +38,7 @@
 .program__item--slim {
   background-image: url("../img/svg/cat-egyptian-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 22px 21px;
+  background-position: 22px 20px;
   background-size: 50px 53px;
 }
 
