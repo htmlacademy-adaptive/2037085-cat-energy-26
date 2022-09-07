@@ -7,9 +7,8 @@
 }
 
 .nutrition__title {
-  width: 100%;
-  padding-top: 27px;
-  padding-bottom: 150px;
+  padding-top: 26px;
+  padding-bottom: 149px;
 
   text-align: center;
 
@@ -24,6 +23,8 @@
 
   @media (min-width: $tablet-width) {
     color: #000000;
+
+    background: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -32,6 +33,9 @@
 }
 
 .nutrition__title h1 {
+  padding-top: 1px;
+
+  line-height: 36px;
   color: inherit;
 
   @media (min-width: $tablet-width) {
@@ -46,6 +50,8 @@
 }
 
 .nutrition__subtitle {
+  padding-top: 12px;
+
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -88,7 +94,7 @@
 .nutrition__btn {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 20px;
   z-index: 1;
 
   width: 100%;
@@ -97,8 +103,6 @@
 
   font-size: 14px;
   line-height: 18px;
-
-  transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
     position: static;

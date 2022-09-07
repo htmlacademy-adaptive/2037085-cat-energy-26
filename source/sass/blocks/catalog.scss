@@ -1,5 +1,51 @@
+.catalog {
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    padding-top: 40px;
+  }
+}
+
+.catalog__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    gap: 70px 60px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $vp-desktop) {
+    gap: 65px 80px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .catalog__item {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    padding-top: 80px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    left: -20px;
+
+    border-bottom: 1px solid #ebebeb;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
 }
 
 .catalog__item-container {
@@ -7,34 +53,72 @@
   padding: 20px 0 25px;
 
   grid-template-columns: 140px 1fr;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 38px 40px;
+
+    background-color: #f2f2f2;
+
+    grid-template-columns: 1fr;
+  }
 }
 
 .catalog__img {
   width: 140px;
   height: 112px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+    margin: -70px auto 0;
+  }
+
+  @media (min-width: $vp-desktop) {
+    margin-top: -80px;
+  }
+}
+
+.catalog__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.catalog__descr {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding-top: 32px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    padding-top: 43px;
+  }
 }
 
 .catalog__title {
   max-width: 80px;
   margin: 0;
 
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
   text-transform: uppercase;
-}
 
-.catalog__descr {
-  flex-grow: 1;
-  width: 100%;
-  max-width: 230px;
-  margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    max-width: 155px;
+    margin: 0 auto;
 
-  font-weight: inherit;
-  font-size: 12px;
-  line-height: 14px;
-  font-family: $font-family-other;
-  color: $color_dark-gray;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $vp-desktop) {
+    line-height: 21px;
+  }
 }
 
 .catalog__title-link {
@@ -43,31 +127,46 @@
 
 .catalog__table {
   width: 100%;
+  margin-top: 13px;
 
   border-collapse: collapse;
-}
-
-.catalog__table-item {
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 15px;
   font-family: $font-family-other;
-  text-align: center;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 12px;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    margin-top: 16px;
+  }
 }
 
-.catalog__table-title {
-  text-align: left;
+.catalog__table tr {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.catalog__table td {
+  @media (min-width: $tablet-width) {
+    padding: 8px 0;
+  }
 }
 
 .catalog__table-value {
   text-align: right;
 }
 
-.catalog__item-more h3 {
-  max-width: 100%;
-  margin-bottom: 7px;
+.catalog__btn {
+  width: 100%;
+
+  grid-column: 1/-1;
 }
 
 .catalog__item-more .catalog__item-container {
@@ -79,12 +178,50 @@
   background-image: url("../img/svg/icon-plus.svg");
   background-repeat: no-repeat;
   background-position: top 25px center;
+
+  @media (min-width: $tablet-width) {
+    padding: 160px 35px 37px;
+
+    background-color: transparent;
+    background-position: top 53px center;
+    background-size: 60px 60px;
+    border: 2px solid #f2f2f2;
+  }
+
+  @media (min-width: $vp-desktop) {
+    background-position: top 50px center;
+  }
 }
 
-.catalog__btn {
-  width: 100%;
+.catalog__item-more h3 {
+  max-width: 100%;
+  margin-bottom: 7px;
 
-  grid-column: 1/-1;
+  @media (min-width: $tablet-width) {
+    max-width: 155px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.catalog__item-more p {
+  margin: 0 0 20px;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-family-other;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+    margin: 0 auto 85px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .catalog__item-more .catalog__btn {

@@ -15,13 +15,11 @@
 
     counter-reset: subsection;
 
-    gap: 80px 60px;
+    gap: 80px;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    counter-reset: subsection;
-
     gap: 80px;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -47,7 +45,7 @@
   position: relative;
 
   min-height: 60px;
-  margin-bottom: 20px;
+  padding-left: 80px;
 
   font-size: 14px;
   line-height: 18px;
@@ -70,25 +68,6 @@
     margin-bottom: 0;
   }
 
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: counter(subsection);
-      position: absolute;
-      top: 0;
-      left: 110px;
-      z-index: -1;
-
-      margin: 0;
-
-      font-size: 280px;
-      line-height: 230px;
-      font-family: $font-family-main;
-      color: #f2f2f2;
-
-      counter-increment: subsection;
-    }
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -98,13 +77,34 @@
     width: 60px;
     height: 60px;
 
-    background-color: #68b738;
+    background-color: $color_green;
     background-repeat: no-repeat;
     background-position: center;
 
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(subsection);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      width: 80px;
+      height: 80px;
+      margin: 0;
+
+      font-size: 280px;
+      line-height: 230px;
+      font-family: $font-family-main;
+      color: $color_gray;
+
+      counter-increment: subsection;
     }
   }
 }
