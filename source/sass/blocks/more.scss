@@ -1,5 +1,5 @@
 .more {
-  padding: 26px 20px 35px;
+  padding: 26px 0 35px;
 }
 
 .more__title {
@@ -25,4 +25,39 @@
   line-height: 20px;
   font-family: $font-family-other;
   color: #444444;
+}
+
+.more__bonus {
+  position: relative;
+
+  min-width: 280px;
+  height: 290px;
+  margin: 0 auto;
+
+  background-image: url("../img/svg/gift-mobile.svg"),
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../img/catalog-background-mobile.png");
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-position: top 59px center, top, top;
+  background-size: 78px 80px, auto, cover;
+
+  @media (min-width: $tablet-width) {
+    padding: 56px 20px 52px 60%;
+
+    text-align: left;
+
+    background-image: url("../img/svg/gift-mobile.svg"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/catalog-background-tablet.png");
+    background-position: center left 80px, top, center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding: 172px 20px 26px;
+
+    text-align: center;
+
+    background-position: top 59px center, top, top;
+  }
 }

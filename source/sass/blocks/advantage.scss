@@ -16,12 +16,29 @@
     counter-reset: subsection;
 
     gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .advantage__title {
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantage__item {
@@ -65,10 +82,18 @@
     background-position: center;
 
     @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
       content: counter(subsection);
       position: absolute;
       top: 0;
       left: 0;
+      z-index: -1;
 
       width: 80px;
       height: 80px;
