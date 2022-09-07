@@ -292,3 +292,13 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
+
+.live__change-pin svg {
+  fill: currentColor;
+}
+
+.live__change-label:hover .live__change-pin {
+  color: $color_green;
+
+  border-color: $color_green;
+}
