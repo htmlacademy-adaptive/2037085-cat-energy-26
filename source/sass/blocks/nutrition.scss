@@ -44,6 +44,14 @@
   background-repeat: repeat, no-repeat;
   background-position: top;
   background-size: auto, cover;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }
 
 .nutrition__title h1 {
@@ -51,6 +59,16 @@
 
   line-height: 36px;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .nutrition__subtitle {
@@ -59,6 +77,34 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.nutrition__promo {
+  width: 280px;
+  height: 270px;
+  margin: -135px auto 0;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    margin-top: -93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 609px;
+    margin: 11px 0 0 -97px;
+  }
 }
 
 .nutrition__btn {
@@ -85,4 +131,9 @@
   &:hover {
     background-color: $color_dark-green;
   }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: $color_dark-green;
 }

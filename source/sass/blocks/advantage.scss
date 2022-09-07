@@ -18,17 +18,35 @@
     gap: 80px;
     grid-template-columns: repeat(4, 1fr);
   }
+
+  @media (min-width: $desktop-width) {
+    counter-reset: subsection;
+
+    gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .advantage__title {
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantage__item {
   position: relative;
 
   min-height: 60px;
-
   font-size: 14px;
   line-height: 18px;
   font-family: $font-family-other;
@@ -80,6 +98,25 @@
       color: $color_gray;
 
       counter-increment: subsection;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
     }
   }
 }

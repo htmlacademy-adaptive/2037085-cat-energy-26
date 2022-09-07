@@ -124,6 +124,13 @@
   text-decoration: none;
 
   cursor: pointer;
+
+  fill: #666666;
+}
+
+.footer__logo-html span {
+  display: inline-block;
+  margin-right: 22px;
 }
 
 .footer__logo-html span {
@@ -142,3 +149,4 @@
   line-height: 20px;
   color: #444444;
 }
+

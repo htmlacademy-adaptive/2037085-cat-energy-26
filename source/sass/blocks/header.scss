@@ -6,6 +6,12 @@
   &--index {
     border: none;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+
+    border: none;
+  }
 }
 
 .header .container {
@@ -19,6 +25,20 @@
   text-align: center;
 
   border-top: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 30px 82px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .header__subtitle--form {
