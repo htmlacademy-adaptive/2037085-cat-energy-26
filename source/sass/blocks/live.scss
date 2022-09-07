@@ -190,8 +190,16 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
 
+  &:hover {
+    border-color: $color_green;
+  }
+
   .live__change-pin svg {
     fill: currentColor;
+
+    &:hover {
+      color: $color_green;
+    }
   }
 
   .live__change-label:hover .live__change-pin {
