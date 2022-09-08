@@ -22,6 +22,8 @@
   background-size: auto, cover;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 17px;
+
     color: #000000;
 
     background: none;
@@ -49,6 +51,12 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+.nutrition__title span {
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
   }
 }
 
@@ -81,7 +89,7 @@
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
-    margin-top: -93px;
+    margin: -93px auto 0;
 
     background-image: url("../img/index-can-tablet.png");
   }

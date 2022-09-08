@@ -9,6 +9,10 @@
   justify-content: space-between;
   margin-top: 11px;
   padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
 }
 
 .footer__map-iframe {
