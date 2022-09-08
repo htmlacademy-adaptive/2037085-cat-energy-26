@@ -29,7 +29,11 @@
     background: none;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    padding: 111px 0 82px 190px;
+
     color: #000000;
   }
 }
@@ -90,8 +94,6 @@
     width: 709px;
     height: 609px;
     margin: -93px auto 0;
-
-    background-image: url("../img/index-can-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
@@ -132,15 +134,38 @@
     line-height: 20px;
 
     transform: none;
+
+    &:hover {
+      background-color: $color_dark-green;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+
+      background-color: $color_dark-green;
+    }
   }
 
-  &:hover {
-    background-color: $color_dark-green;
-  }
+  @media (min-width: $desktop-width) {
+    position: static;
 
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
+    max-width: 244px;
+    max-height: 54px;
+    margin: 66px 214px 281px 80px;
 
-    background-color: $color_dark-green;
+    font-size: 20px;
+    line-height: 20px;
+
+    transform: none;
+
+    &:hover {
+      background-color: $color_dark-green;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+
+      background-color: $color_dark-green;
+    }
   }
 }
