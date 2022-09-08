@@ -54,6 +54,7 @@
 .live p {
   font-family: $font-family-other;
   color: #444444;
+  word-break: break-all;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
