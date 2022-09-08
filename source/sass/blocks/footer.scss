@@ -4,6 +4,11 @@
   background-color: $color_gray;
 }
 
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer__logo {
   display: inline-block;
   align-items: center;
