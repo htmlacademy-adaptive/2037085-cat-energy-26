@@ -33,12 +33,15 @@
 }
 
 .nutrition__title h1 {
-  padding-top: 1px;
+  padding-top: 2px;
 
   line-height: 36px;
   color: inherit;
 
   @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-right: 151px;
+
     font-size: 60px;
     line-height: 60px;
   }
@@ -57,6 +60,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-right: 248px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -76,6 +82,8 @@
     width: 709px;
     height: 609px;
     margin-top: -93px;
+
+    background-image: url("../img/index-can-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
@@ -107,7 +115,13 @@
   @media (min-width: $tablet-width) {
     position: static;
 
-    margin-left: 0;
+    max-width: 244px;
+    max-height: 54px;
+    margin-top: 55px;
+    margin-left: 119px;
+
+    font-size: 20px;
+    line-height: 20px;
 
     transform: none;
   }
