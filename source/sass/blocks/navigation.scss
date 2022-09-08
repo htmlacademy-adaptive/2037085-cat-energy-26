@@ -179,7 +179,7 @@
 }
 
 .navigation__link--current {
-  &:before {
+  &::before {
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
@@ -195,7 +195,7 @@
 }
 
 .header--index .navigation__link--current {
-  &:before {
+  &::before {
     @media (min-width: $desktop-width) {
       background-color: #ffffff;
     }
