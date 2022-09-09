@@ -75,9 +75,14 @@
         rgba(104, 183, 56, 0.85),
         rgba(104, 183, 56, 0.85)
       ),
-      url("../img/index-background-mobile.jpg");
+      url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: left;
+    background-size: cover;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-desktop@2x.jpg");
     background-size: cover;
   }
 }
