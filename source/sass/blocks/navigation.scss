@@ -154,6 +154,12 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
 
@@ -162,14 +168,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-  }
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    &:hover,
-    &:active,
-    &:focus {
-      opacity: 0.6;
-    }
   }
 
   @media (min-width: $desktop-width) {

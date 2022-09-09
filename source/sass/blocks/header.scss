@@ -43,7 +43,14 @@
 }
 
 .header__subtitle--form {
+  padding-top: 22px;
+  padding-right: 50px;
+
   text-transform: uppercase;
+}
+
+.header__subtitle--form span {
+  padding-left: 17px;
 }
 
 .header--index::after {
