@@ -1,3 +1,7 @@
+.form {
+  margin-top: -36px;
+}
+
 .form__group {
   display: grid;
 
@@ -24,6 +28,10 @@
 
   border: none;
   border-bottom: 1px solid #d9d9d9;
+}
+
+.form__fieldset--data {
+  padding-bottom: 25px;
 }
 
 .form__catalog-control {
@@ -101,7 +109,7 @@
     background-color: #000000;
     transform: translateY(-50%);
 
-    @media (min-width: $vp-desktop) {
+    @media (min-width: $desktop-width) {
       right: 17px;
     }
   }

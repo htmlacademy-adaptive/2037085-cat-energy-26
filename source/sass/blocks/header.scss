@@ -19,8 +19,9 @@
 }
 
 .header__bigtitle {
-  padding-top: 27px;
-  padding-bottom: 41px;
+  padding-top: 25px;
+  padding-right: 24px;
+  padding-bottom: 38px;
 
   text-align: center;
 
@@ -31,6 +32,8 @@
 
     font-size: 60px;
     line-height: 60px;
+
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,11 +41,24 @@
 
     font-size: 60px;
     line-height: 60px;
+
+    border: none;
   }
 }
 
+.header--form {
+  border: none;
+}
+
 .header__subtitle--form {
+  padding-top: 22px;
+  padding-right: 50px;
+
   text-transform: uppercase;
+}
+
+.header__subtitle--form span {
+  padding-left: 17px;
 }
 
 .header--index::after {

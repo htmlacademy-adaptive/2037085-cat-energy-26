@@ -10,6 +10,8 @@
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="img/favicon/favicon.png">
+  <link rel="icon" href="img/favicon/svg-favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-favicon.png">
   <title>HTML Academy: Кэт энерджи</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
@@ -20,7 +22,11 @@
 
       <nav class="navigation">
         <a class="navigation__logo">
-          <img src="img/svg/logo-mobile.svg" width="191" height="38" alt="Логотип Cat energy - светлый кот в одежде супергероя.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+            <source media="(min-width: 1440px)" srcset="img/svg/logo-desktop.svg">
+            <img src="img/svg/logo-mobile.svg" width="191" height="38" alt="Логотип Cat energy - светлый кот в одежде супергероя.">
+          </picture>
         </a>
 
         <button class="navigation__btn" type="button">
@@ -43,12 +49,16 @@
 
       <section class="nutrition">
         <div class="nutrition__title">
-          <h1 class="title-page">Функциональное питание&nbsp;для&nbsp;котов</h1>
+          <h1 class="title-page">Функциональное <span>питание&nbsp;для&nbsp;котов</span></h1>
           <p class="nutrition__subtitle">Занялся собой? Займись котом!</p>
           <a class="button nutrition__btn" href="form.html">Подобрать программу</a>
         </div>
         <div class="nutrition__promo">
-          <img src="img/index-can-mobile.png" width="280" height="270" alt="Банка с порцией питания Cat Energy PRO с курицей.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
+            <img src="img/index-can-mobile.png" width="280" height="270" alt="Банка с порцией питания Cat Energy PRO с курицей.">
+          </picture>
         </div>
       </section>
     </div>
@@ -86,7 +96,7 @@
       <div class="live__container container">
         <div class="live__description">
           <h2 class="title-page live__title">Живой пример</h2>
-          <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <p>Борис сбросил 5 кг за 2 месяца, просто заменив&nbsp;свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
           <div class="live__result">
             <div class="live__result-item">
@@ -136,7 +146,7 @@
       <h2 class="visually-hidden">Местонахождение.</h2>
       <div class="container">
         <div class="footer__contact">
-          <p class="footer__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="footer__title">Приглашаем&nbsp;к сотрудничеству дилеров!</p>
           <p class="footer__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </div>

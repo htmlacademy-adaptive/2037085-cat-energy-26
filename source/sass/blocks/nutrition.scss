@@ -22,23 +22,32 @@
   background-size: auto, cover;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 17px;
+
     color: #000000;
 
     background: none;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    padding: 111px 0 82px 190px;
+
     color: #000000;
   }
 }
 
 .nutrition__title h1 {
-  padding-top: 1px;
+  padding-top: 2px;
 
   line-height: 36px;
   color: inherit;
 
   @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-right: 151px;
+
     font-size: 60px;
     line-height: 60px;
   }
@@ -46,6 +55,12 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+.nutrition__title span {
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
   }
 }
 
@@ -57,6 +72,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-right: 248px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -75,7 +93,7 @@
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
-    margin-top: -93px;
+    margin: -93px auto 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,18 +125,47 @@
   @media (min-width: $tablet-width) {
     position: static;
 
-    margin-left: 0;
+    max-width: 244px;
+    max-height: 54px;
+    margin-top: 55px;
+    margin-left: 119px;
+
+    font-size: 20px;
+    line-height: 20px;
 
     transform: none;
+
+    &:hover {
+      background-color: $color_dark-green;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+
+      background-color: $color_dark-green;
+    }
   }
 
-  &:hover {
-    background-color: $color_dark-green;
-  }
+  @media (min-width: $desktop-width) {
+    position: static;
 
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
+    max-width: 244px;
+    max-height: 54px;
+    margin: 66px 214px 281px 80px;
 
-    background-color: $color_dark-green;
+    font-size: 20px;
+    line-height: 20px;
+
+    transform: none;
+
+    &:hover {
+      background-color: $color_dark-green;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+
+      background-color: $color_dark-green;
+    }
   }
 }

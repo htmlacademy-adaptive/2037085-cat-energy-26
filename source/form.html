@@ -10,17 +10,23 @@
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="img/favicon/favicon.png">
+  <link rel="icon" href="img/favicon/svg-favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-favicon.png">
   <title>HTML Academy: Кэт энерджи</title>
 
   <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="no-js">
-  <header class="header">
+  <header class="header header--form">
     <div class="container">
       <nav class="navigation">
         <a class="navigation__logo" href="index.html">
-          <img src="img/svg/logo-mobile.svg" width="191" height="38" alt="Логотип Cat energy - светлый кот в одежде супергероя.">
+          <picture>
+            <source media="(min-width: $tablet-width)" srcset="img/svg/logo-tablet.svg">
+            <source media="(min-width: $desktop-width)" srcset="img/svg/logo-desktop.svg">
+            <img src="img/svg/logo-mobile.svg" width="191" height="38" alt="Логотип Cat energy - светлый кот в одежде супергероя.">
+          </picture>
         </a>
 
         <button class="navigation__btn" type="button">
@@ -41,7 +47,7 @@
       </nav>
       <section class="header__bigtitle header__bigtitle--form">
         <h1 class="title-page">Подбор программы</h1>
-        <p class="header__subtitle--form">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="header__subtitle--form">Заполните анкету, и мы подберем<br><span>программу питания для вашего кота</span></p>
       </section>
     </div>
   </header>
