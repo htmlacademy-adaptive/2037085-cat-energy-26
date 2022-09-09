@@ -22,7 +22,11 @@
     <div class="container">
       <nav class="navigation">
         <a class="navigation__logo" href="index.html">
-          <img src="img/svg/logo-mobile.svg" width="191" height="38" alt="Логотип Cat energy - светлый кот в одежде супергероя.">
+          <picture>
+            <source media="(min-width: $tablet-width)" srcset="img/svg/logo-tablet.svg">
+            <source media="(min-width: $desktop-width)" srcset="img/svg/logo-desktop.svg">
+            <img src="img/svg/logo-mobile.svg" width="191" height="38" alt="Логотип Cat energy - светлый кот в одежде супергероя.">
+          </picture>
         </a>
 
         <button class="navigation__btn" type="button">
