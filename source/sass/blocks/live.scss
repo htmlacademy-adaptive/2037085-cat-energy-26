@@ -270,6 +270,7 @@
   background-color: #666666;
   border-radius: 2px;
   transform: translateX(-50%);
+  cursor: pointer;
 }
 
 .live__change-pin {
@@ -301,3 +302,9 @@
 
   border-color: $color_green;
 }
+/*
+.live__change-label:hover .live__change-pin {
+  color: $color_dark-green;
+
+  border-color: $color_dark-green;
+}*/
