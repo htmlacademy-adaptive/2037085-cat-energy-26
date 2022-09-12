@@ -71,12 +71,12 @@
   background-size: 78px 80px, auto, cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        rgba(104, 183, 56, 0.85),
-        rgba(104, 183, 56, 0.85)
-      ),
+    background-image: url("../img/svg/gift-mobile.svg"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url("../img/catalog-background-mobile@2x.png");
-    background-size: cover;
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-position: top 59px center, top, top;
+    background-size: 78px 80px, auto, cover;
   }
 
   @media (min-width: $tablet-width) {
@@ -90,12 +90,10 @@
     background-position: center left 80px, top, center;
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(104, 183, 56, 0.85),
-          rgba(104, 183, 56, 0.85)
-        ),
+      background-image: url("../img/svg/gift-mobile.svg"),
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
         url("../img/catalog-background-tablet@2x.png");
-      background-size: cover;
+      background-position: center left 80px, top, center;
     }
   }
 
@@ -111,12 +109,10 @@
     background-position: top 59px center, top, top;
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(104, 183, 56, 0.85),
-          rgba(104, 183, 56, 0.85)
-        ),
+      background-image: url("../img/svg/gift-mobile.svg"),
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
         url("../img/catalog-background-desktop@2x.png");
-      background-size: cover;
+      background-position: top 59px center, top, top;
     }
   }
 }
