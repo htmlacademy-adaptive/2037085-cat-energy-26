@@ -271,6 +271,16 @@
   border-radius: 2px;
   transform: translateX(-50%);
   cursor: pointer;
+
+  &:hover {
+    background-color: $color_green;
+    border-color: $color_green;
+  }
+
+  &:active {
+    background-color: $color_dark-green;
+    border-color: $color_dark-green;
+  }
 }
 
 .live__change-pin {
@@ -302,9 +312,21 @@
 
   border-color: $color_green;
 }
-/*
-.live__change-label:hover .live__change-pin {
+
+.live__change:hover .live__change-pin {
+  color: $color_green;
+
+  border-color: $color_green;
+}
+
+.live__change-label:active .live__change-pin {
   color: $color_dark-green;
 
   border-color: $color_dark-green;
-}*/
+}
+
+.live__change:active .live__change-pin {
+  color: $color_dark-green;
+
+  border-color: $color_dark-green;
+}
