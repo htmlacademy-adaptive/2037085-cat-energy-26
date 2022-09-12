@@ -40,6 +40,7 @@
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
+    margin-top: 1px;
   }
 }
 
@@ -123,6 +124,10 @@
 
     background-color: transparent;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 3px;
+  }
 }
 
 .navigation--opened .navigation__list {
@@ -192,14 +197,12 @@
       @media (min-width: $tablet-width) {
         content: "";
         position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        bottom: -8px;
 
         width: 100%;
         height: 2px;
 
-        background-color: #68b738;
+        background-color: $color_green;
       }
     }
   }
@@ -208,6 +211,7 @@
     &::before {
       @media (min-width: $desktop-width) {
         background-color: #ffffff;
+        border-bottom: 2px solid #ffffff;
       }
     }
   }

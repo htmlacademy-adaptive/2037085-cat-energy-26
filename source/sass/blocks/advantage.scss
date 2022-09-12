@@ -5,6 +5,30 @@
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid #e6e6e6;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 77px;
+
+    border: none;
+  }
+}
+
+.advantage__title {
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantage__list {
@@ -28,22 +52,6 @@
   @media (min-width: $desktop-width) {
     gap: 80px;
     grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.advantage__title {
-  line-height: 40px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 8px;
-
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
   }
 }
 
@@ -112,6 +120,10 @@
       color: $color_gray;
 
       counter-increment: subsection;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 1px;
     }
   }
 }

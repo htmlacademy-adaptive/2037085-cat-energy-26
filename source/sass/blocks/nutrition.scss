@@ -40,7 +40,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
 
-    padding: 111px 0 82px 190px;
+    padding: 63px 0;
 
     color: #000000;
   }
@@ -60,15 +60,19 @@
     line-height: 60px;
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
+  @media (min-width: $desktop-width) {
+    max-width: 520px;
+    padding-left: 79px;
   }
 }
 
 .nutrition__title span {
   @media (min-width: $tablet-width) {
     padding-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 2px;
   }
 }
 
@@ -87,7 +91,10 @@
     line-height: 20px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    padding-right: 776px;
+    padding-bottom: 37px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -105,8 +112,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -3px;
+    left: 544px;
+
     width: 552px;
-    height: 609px;
+    height: 499px;
     margin: 11px 0 0 -97px;
   }
 }
@@ -159,7 +170,11 @@
 
     max-width: 244px;
     max-height: 54px;
-    margin: 66px 214px 281px 80px;
+    margin-top: -7px;
+    margin-bottom: 88px;
+    margin-left: 80px;
+    padding-top: 18px;
+    padding-bottom: 17px;
 
     font-size: 20px;
     line-height: 20px;
