@@ -5,6 +5,10 @@
 
   &--index {
     border: none;
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 173px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -19,11 +23,7 @@
 }
 
 .header__bigtitle {
-  padding-top: 25px;
-  padding-right: 24px;
-  padding-bottom: 38px;
-
-  text-align: center;
+  padding: 28px 20px 37px;
 
   border-top: 1px solid #ebebeb;
 
@@ -32,12 +32,13 @@
 
     font-size: 60px;
     line-height: 60px;
+    text-align: left;
 
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 74px 110px 0;
+    padding: 60px 0 40px;
 
     font-size: 60px;
     line-height: 60px;
@@ -46,24 +47,38 @@
   }
 }
 
+.header__bigtitle--form {
+  padding-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 44px;
+    padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
 .header--form {
   border: none;
 }
 
-.header__subtitle--form {
-  padding-top: 22px;
+.header__subtitle {
+  padding-top: 19px;
   padding-right: 50px;
 
   text-transform: uppercase;
-}
 
-.header__subtitle--form span {
-  padding-left: 17px;
+  @media (min-width: $tablet-width) {
+    padding-top: 33px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .header--index::after {
-  background-color: $color_green;
-
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
@@ -73,9 +88,6 @@
     left: 50%;
     z-index: -1;
 
-    width: 720px;
-    height: 694px;
-
     background-image: linear-gradient(
         rgba(104, 183, 56, 0.85),
         rgba(104, 183, 56, 0.85)
@@ -83,6 +95,7 @@
       url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: left;
+    background-size: cover;
   }
 
   @media (min-resolution: 2dppx) {
@@ -91,6 +104,5 @@
         rgba(104, 183, 56, 0.85)
       ),
       url("../img/index-background-desktop@2x.jpg");
-    background-size: cover;
   }
 }

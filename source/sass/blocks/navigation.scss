@@ -183,86 +183,85 @@
 
     font-size: 20px;
     line-height: 30px;
-    color: $color-light;
   }
+}
 
-  .header--index .navigation__link {
-    @media (min-width: $desktop-width) {
-      color: #ffffff;
-    }
+.header--index .navigation__link {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
   }
+}
 
-  .navigation__link--current {
-    &::before {
-      @media (min-width: $tablet-width) {
-        content: "";
-        position: absolute;
-        bottom: -8px;
-
-        width: 100%;
-        height: 2px;
-
-        background-color: $color_green;
-      }
-    }
-  }
-
-  .header--index .navigation__link--current {
-    &::before {
-      @media (min-width: $desktop-width) {
-        background-color: #ffffff;
-        border-bottom: 2px solid #ffffff;
-      }
-    }
-  }
-
-  .navigation__title {
-    position: relative;
-
-    padding: 28px 20px 37px;
-
+.navigation__link--current {
+  &::before {
     @media (min-width: $tablet-width) {
-      padding: 44px 30px 39px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 61px 0 41px;
-    }
-
-    &::after,
-    &::before {
       content: "";
       position: absolute;
-      right: 0;
       bottom: 0;
-      left: 0;
 
-      border-bottom: 1px solid #ebebeb;
+      width: 100%;
+      height: 2px;
 
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
+      background-color: $color_green;
     }
+  }
+}
 
-    &::before {
-      top: 0;
-      bottom: auto;
+.header--index .navigation__link--current {
+  &::before {
+    @media (min-width: $desktop-width) {
+      background-color: #ffffff;
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+}
+
+.navigation__title {
+  position: relative;
+
+  padding: 28px 20px 37px;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 30px 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 61px 0 41px;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    border-bottom: 1px solid #ebebeb;
+
+    @media (min-width: $tablet-width) {
+      display: none;
     }
   }
 
-  .navigation__title--form {
-    padding-bottom: 16px;
+  &::before {
+    top: 0;
+    bottom: auto;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      padding: 44px 70px 64px;
-    }
+.navigation__title--form {
+  padding-bottom: 16px;
 
-    @media (min-width: $desktop-width) {
-      padding: 60px 0 65px;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 44px 70px 64px;
+  }
 
-    &::after {
-      border-bottom: none;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 60px 0 65px;
+  }
+
+  &::after {
+    border-bottom: none;
   }
 }

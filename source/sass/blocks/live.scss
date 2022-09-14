@@ -54,7 +54,8 @@
 .live p {
   font-family: $font-family-other;
   color: #444444;
-  word-break: break-all;
+
+  // word-break: break-all;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -273,7 +274,8 @@
   transform: translateX(-50%);
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     background-color: $color_green;
     border-color: $color_green;
   }
@@ -302,28 +304,25 @@
   border-radius: 20px;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color_green;
+
+    border-color: $color_green;
+    outline: none;
+  }
 }
 
 .live__change-pin svg {
   fill: currentColor;
 }
 
-.live__change-label:hover .live__change-pin {
+.live__change:hover .live__change-pin,
+.live__change:focus-within .live__change-pin {
   color: $color_green;
 
   border-color: $color_green;
-}
-
-.live__change:hover .live__change-pin {
-  color: $color_green;
-
-  border-color: $color_green;
-}
-
-.live__change-label:active .live__change-pin {
-  color: $color_dark-green;
-
-  border-color: $color_dark-green;
 }
 
 .live__change:active .live__change-pin {
