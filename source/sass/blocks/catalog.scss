@@ -67,6 +67,15 @@
   width: 140px;
   height: 112px;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 168px;
     height: 200px;
@@ -123,6 +132,15 @@
 
 .catalog__title-link {
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__table {
