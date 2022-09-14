@@ -202,8 +202,15 @@
 }
 
 // form__input-container--error класс при ошибке в input
+.form__input-container--error {
+  border: 1px solid #ff8282;
+  outline: 1px solid #ff8282;
+}
 
 // form__input--error класс для ошибки в input
+//.form__input--error svg {
+// color: #ff8282;
+//}
 
 .form__legend {
   margin-bottom: 17px;
@@ -265,6 +272,11 @@
 
   &--phone::after {
     mask-image: url("../img/svg/form-phone-mobile.svg");
+  }
+
+  //При ошибке красит иконки в красный цвет
+  &--error::after {
+    background-color: #ff8282;
   }
 
   &:focus-within::after {
