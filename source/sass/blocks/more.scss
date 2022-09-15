@@ -1,67 +1,132 @@
 .more {
-  padding: 22px 0 35px;
+  padding: 23px 0 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0 19px;
+  }
+}
+
+.more__container {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    align-items: start;
+
+    gap: 30px 80px;
+    grid-template-columns: 1fr auto;
+  }
 }
 
 .more__list {
-  display: flex;
-  flex-direction: column;
-  margin: 31px 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
+  }
 }
 
 .more__item {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 16px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 14px 0 18px;
 
+  border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding: 26px 37px 28px;
+
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+
+    gap: 18px 23px;
+    grid-template-columns: 1fr 150px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: baseline;
+    padding: 17px 0 14px;
+
+    border: none;
+    border-top: 1px solid #cdcdcd;
+
+    grid-template-columns: 1fr 220px 60px 244px;
+  }
+}
+
+.more__item:last-child {
   border-bottom: 1px solid #cdcdcd;
 }
 
 .more__title {
-  margin: 0 0 10px;
-  padding-top: 13px;
+  width: 100%;
+  margin: 0 0 12px;
 
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: #222222;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-.more__info-card {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 14px;
-}
-
-.more__weight {
-  font-style: normal;
-  font-weight: 400;
+.more__item span {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 14px;
   font-family: $font-family-other;
   color: #444444;
-}
 
-.more__price {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  font-family: $font-family-other;
-  color: #444444;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .more__btn {
   width: 100%;
-  min-height: 40px;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: auto;
+  }
 }
 
 .more__bonus {
-  position: relative;
+  padding: 172px 20px 26px;
 
-  min-width: 280px;
-  height: 290px;
-  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-family-other;
+  text-align: center;
+  color: #ffffff;
 
   background-image: url("../img/svg/gift-mobile.svg"),
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
@@ -69,6 +134,12 @@
   background-repeat: no-repeat, repeat, no-repeat;
   background-position: top 59px center, top, top;
   background-size: 78px 80px, auto, cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/svg/gift-mobile.svg"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/catalog-background-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     padding: 56px 20px 52px 60%;
@@ -79,6 +150,12 @@
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url("../img/catalog-background-tablet.png");
     background-position: center left 80px, top, center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/svg/gift-mobile.svg"),
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/catalog-background-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -89,17 +166,4 @@
 
     background-position: top 59px center, top, top;
   }
-}
-
-.more__bonus p {
-  margin: 0;
-  padding-top: 188px;
-  padding-bottom: 43px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: $font-family-other;
-  text-align: center;
-  color: $color-light;
 }

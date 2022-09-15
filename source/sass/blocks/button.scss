@@ -27,19 +27,3 @@
     background-color: #5eaa2f;
   }
 }
-
-/*Модификатор для серых кнопок*/
-.button--other {
-  color: $color_dark-gray;
-
-  background-color: $color_gray;
-
-  &:hover,
-  &:focus {
-    background-color: #ebebeb;
-  }
-
-  &:active {
-    color: rgba($color_dark-gray, 0.3);
-  }
-}

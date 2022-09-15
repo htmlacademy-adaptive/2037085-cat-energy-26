@@ -1,17 +1,68 @@
 .footer {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 
   background-color: $color_gray;
 }
 
 .footer__contact {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   margin-top: 11px;
   padding-bottom: 9px;
 
+  grid-template-columns: repeat(2, 1fr);
+
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 30px 39px 40px;
+
+    gap: 10px 270px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 98px;
+    left: 0;
+
+    width: 565px;
+    margin-top: 0;
+    padding: 40px 80px;
+
+    background-color: #ffffff;
+
+    gap: 10px 96px;
+  }
+}
+
+.footer__title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.footer__address {
+  line-height: 20px;
+  font-family: $font-family-other;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.footer__address span {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 20px;
   }
 }
 
@@ -19,12 +70,20 @@
   display: block;
   width: 100%;
   height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .footer__map-img {
   display: none;
   width: 100%;
   height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .footer__map-iframe iframe,
@@ -44,6 +103,12 @@
   display: block;
 }
 
+.footer__container {
+  @media (min-width: $tablet-width) {
+    padding: 58px 0 32px;
+  }
+}
+
 .footer__container .container {
   @media (min-width: $tablet-width) {
     display: grid;
@@ -53,54 +118,73 @@
   }
 }
 
+.footer__logo-container {
+  padding: 38px 0 28px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    text-align: left;
+  }
+}
+
 .footer__logo {
   display: inline-block;
-  align-items: center;
   width: 128px;
   height: 24px;
+
+  vertical-align: baseline;
 
   cursor: pointer;
 
   transition: 0.3s ease;
 
-  &[href]:hover,
-  &[href]:focus {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 
-  &[href]:active {
+  &:active {
     opacity: 0.6;
   }
 }
 
-.footer__logo-container {
-  padding: 38px 0 28px;
-
-  text-align: center;
-}
-
-.footer__social {
-  display: flex;
-  justify-content: center;
-}
-
 .footer__social-container {
-  padding: 21px 0 23px;
+  padding: 21px 0;
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    border: none;
+  }
 }
 
-.footer__social-item:not(:last-child) {
-  margin-right: 24px;
+.footer__social {
+  display: grid;
+  width: 132px;
+  margin: 0 auto;
+
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+
+    gap: 13px;
+  }
 }
 
 .footer__social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 27px;
-  height: 19px;
+  width: 28px;
+  height: 22px;
 
   vertical-align: middle;
   color: $color_dark-gray;
@@ -116,8 +200,16 @@
   }
 }
 
+.footer__social-link svg {
+  fill: currentColor;
+}
+
 .footer__logo-html-container {
-  padding-top: 21px;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .footer__logo-html {
@@ -133,22 +225,29 @@
 
   cursor: pointer;
 
-  fill: #666666;
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__logo-html svg {
+  fill: $color_dark-gray;
+}
+
+.footer__logo-html:hover svg,
+.footer__logo-html:focus svg {
+  fill: $color_green;
 }
 
 .footer__logo-html span {
   display: inline-block;
   margin-right: 22px;
-}
-
-.footer__title {
-  font-size: 16px;
-  line-height: 20px;
-  color: #111111;
-  text-transform: uppercase;
-}
-
-.footer__address {
-  line-height: 20px;
-  color: #444444;
 }
