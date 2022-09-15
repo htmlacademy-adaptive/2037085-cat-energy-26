@@ -202,19 +202,20 @@
     font-size: 20px;
     line-height: 30px;
   }
-}
 
-// form__input-container--error класс при ошибке в input
-.form__input-container--error {
-  border: 1px solid #ff8282;
-  outline: 1px solid #ff8282;
-}
+  &--error {
+    border: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
+  }
 
-//Покрасила модификатор эррор у афтера инпут контейнера. Больше никак не красилось. Только буквы красились.
-// form__input--error класс для ошибки в input
-//.form__input--error svg {
-// color: #ff8282;
-//}
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+}
 
 .form__legend {
   margin-bottom: 17px;
@@ -278,7 +279,7 @@
     mask-image: url("../img/svg/form-phone-mobile.svg");
   }
 
-  //При ошибке красит иконки в красный цвет
+  // form__input-container--error класс при ошибке в input
   &--error::after {
     background-color: #ff8282;
   }
