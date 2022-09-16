@@ -44,7 +44,7 @@ return gulp.src('source/js/script.js')
 
 // Images
 
-const optimizeImages = () => {
+export const optimizeImages = () => {
 return gulp.src('source/img/**/*.{png,jpg}')
 .pipe(squoosh())
 .pipe(gulp.dest('build/img'))

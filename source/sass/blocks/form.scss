@@ -195,6 +195,8 @@
   background-color: transparent;
   border: 1px solid #e7e7e7;
 
+  appearance: none;
+
   @media (min-width: $tablet-width) {
     height: 52px;
     padding: 5px 17px;
@@ -216,6 +218,19 @@
     border: 1px solid #444444;
     outline: 1px solid #444444;
   }
+
+  /* stylelint-disable */
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    margin: 0;
+
+    -webkit-appearance: none !important;
+  }
+
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+  /* stylelint-enable */
 }
 
 .form__legend {
