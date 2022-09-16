@@ -183,6 +183,8 @@
 
 .catalog__btn {
   width: 100%;
+
+  grid-column: 1/-1;
 }
 
 .catalog__item-more .catalog__item-container {

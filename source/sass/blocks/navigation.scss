@@ -26,6 +26,7 @@
   align-items: center;
   width: 191px;
   height: 38px;
+  margin-bottom: 17px;
   margin-left: 19px;
 
   cursor: pointer;
@@ -276,4 +277,14 @@
   &::after {
     border-bottom: none;
   }
+}
+
+.no-js .navigation__list {
+  position: static;
+
+  display: flex;
+}
+
+.no-js .navigation__btn {
+  display: none;
 }
